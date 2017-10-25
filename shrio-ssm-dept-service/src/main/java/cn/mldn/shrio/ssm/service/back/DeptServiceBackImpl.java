@@ -2,9 +2,10 @@ package cn.mldn.shrio.ssm.service.back;
 
 import java.util.List;
 
+import cn.mldn.shrio.ssm.abs.AbstractService;
 import cn.mldn.shrio.ssm.vo.Dept;
 
-public class DeptServiceBackImpl implements IDeptServiceBack{
+public class DeptServiceBackImpl extends AbstractService implements IDeptServiceBack{
 
 	@Override
 	public boolean add(Dept vo) {

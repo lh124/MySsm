@@ -19,5 +19,5 @@ public interface IMemberServiceFront {
 	 * 1、key = allRoles、value = 该用户具备的所有角色；
 	 * 2、key = allActions、value = 该用户具备的所有权限
 	 */
-	public Map<String,Set<String>> list(String mid) ;
+	public Map<String,Set<String>> getRoleAndActionByMember(String mid) ;
 }

@@ -352,3 +352,40 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve resource locati
 2017-10-25 19:22:59,604 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==      Total: 10
 2017-10-25 19:22:59,622 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 19:22:55 CST 2017]; root of context hierarchy
 2017-10-25 19:22:59,640 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 22:01:30,376 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 22:01:30,427 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 22:01:30,430 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@610694f1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@43814d18, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c5a1b69, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3701eaf6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@627551fb]
+2017-10-25 22:01:30,711 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 22:01:31,412 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 22:01:31,610 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 22:01:31,674 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 22:01:31,874 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@536aaa8d: startup date [Wed Oct 25 22:01:31 CST 2017]; root of context hierarchy
+2017-10-25 22:01:35,092 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 22:01:36,901 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==>  Preparing: select mid,name,password,locked from member where mid=? 
+2017-10-25 22:01:36,961 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==> Parameters: mldn(String)
+2017-10-25 22:01:37,124 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==    Columns: mid, name, password, locked
+2017-10-25 22:01:37,125 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==        Row: mldn, ÆÕÍ¨ÈË, java, 0
+2017-10-25 22:01:37,136 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==      Total: 1
+2017-10-25 22:01:37,207 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==>  Preparing: select rid from member_role where mid=? 
+2017-10-25 22:01:37,208 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==> Parameters: admin(String)
+2017-10-25 22:01:37,253 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==    Columns: rid
+2017-10-25 22:01:37,253 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: member
+2017-10-25 22:01:37,254 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: dept
+2017-10-25 22:01:37,255 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: news
+2017-10-25 22:01:37,256 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==      Total: 3
+2017-10-25 22:01:37,260 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - ==>  Preparing: select actid from action where rid in (select rid from member_role where mid=?) 
+2017-10-25 22:01:37,262 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - ==> Parameters: admin(String)
+2017-10-25 22:01:37,307 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==    Columns: actid
+2017-10-25 22:01:37,308 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: dept:edit
+2017-10-25 22:01:37,308 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: dept:list
+2017-10-25 22:01:37,309 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:add
+2017-10-25 22:01:37,309 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:edit
+2017-10-25 22:01:37,310 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:list
+2017-10-25 22:01:37,311 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:remove
+2017-10-25 22:01:37,312 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:add
+2017-10-25 22:01:37,312 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:audit
+2017-10-25 22:01:37,317 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:edit
+2017-10-25 22:01:37,319 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:list
+2017-10-25 22:01:37,320 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==      Total: 10
+2017-10-25 22:01:37,586 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@536aaa8d: startup date [Wed Oct 25 22:01:31 CST 2017]; root of context hierarchy
+2017-10-25 22:01:37,606 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed

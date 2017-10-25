@@ -20,6 +20,6 @@ public class AppTest {
 	}
 	@Test
 	public void testGetRoleAndActionByMember() {
-		System.err.println(this.memberService.list("admin"));
+		System.err.println(this.memberService.getRoleAndActionByMember("admin"));
 	}
 }

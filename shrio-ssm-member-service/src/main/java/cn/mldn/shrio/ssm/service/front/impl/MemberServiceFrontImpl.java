@@ -26,10 +26,10 @@ public class MemberServiceFrontImpl implements IMemberServiceFront {
 		return this.memberdao.findById(mid);
 	}
 	@Override
-	public Map<String, Set<String>> list(String mid) {
+	public Map<String, Set<String>> getRoleAndActionByMember(String mid) {
 		Map<String, Set<String>>  map=new HashMap<>();
-		map.put("allrole", roledao.findAllByMember(mid));
-		map.put("allaction", actiondao.findAllByMember(mid));
+		map.put("allRoles", roledao.findAllByMember(mid));
+		map.put("allActions", actiondao.findAllByMember(mid));
 		return map;
 	}
 
