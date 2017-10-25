@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -12,7 +11,7 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<mldnshiro.version>0.0.1</mldnshiro.version>
+		<SpringShrioMyBatis.version>0.0.1</SpringShrioMyBatis.version>
 
 		<shiro.version>1.3.2</shiro.version>
 
@@ -53,14 +52,17 @@
 			<dependency>
 				<groupId>cn.mldn</groupId>
 				<artifactId>shrio-ssm-api</artifactId>
-				<version>${mldnshiro.version}</version>
+				<version>${SpringShrioMyBatis.version}</version>
 			</dependency>
-			<!-- <dependency> <groupId>cn.mldn</groupId> <artifactId>mldnshiro-ssm-service-member</artifactId> 
-				<version>${mldnshiro.version}</version> </dependency> -->
+			<dependency>
+				<groupId>cn.mldn</groupId>
+				<artifactId>shrio-ssm-member-service</artifactId>
+				<version>${SpringShrioMyBatis.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>cn.mldn</groupId>
 				<artifactId>shrio-ssm-dept-service</artifactId>
-				<version>${mldnshiro.version}</version>
+				<version>${SpringShrioMyBatis.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-logging</groupId>
@@ -331,6 +333,6 @@
 	<modules>
 		<module>shrio-ssm-api</module>
 		<module>shrio-ssm-dept-service</module>
-		<module>shrio-ssm-web</module>
+		<module>shrio-ssm-member-service </module>
 	</modules>
 </project>

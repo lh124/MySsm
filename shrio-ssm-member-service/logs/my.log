@@ -1,0 +1,354 @@
+2017-10-25 09:37:35,684 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 09:37:35,693 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 09:37:35,700 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3532ec19, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68c4039c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ae45eb6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59f99ea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27efef64]
+2017-10-25 09:37:35,781 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-base.xml]
+2017-10-25 09:37:36,137 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 09:37:36,175 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 09:37:36,191 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 09:37:36,251 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@3c0f93f1: startup date [Wed Oct 25 09:37:36 CST 2017]; root of context hierarchy
+2017-10-25 09:37:37,206 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 09:37:37,855 DEBUG [cn.mldn.mldnshiro.ssm.dao.IMemberDAO.findById] - ==>  Preparing: SELECT mid,name,password,locked FROM member WHERE mid=? 
+2017-10-25 09:37:37,882 DEBUG [cn.mldn.mldnshiro.ssm.dao.IMemberDAO.findById] - ==> Parameters: mldn(String)
+2017-10-25 09:37:37,898 TRACE [cn.mldn.mldnshiro.ssm.dao.IMemberDAO.findById] - <==    Columns: mid, name, password, locked
+2017-10-25 09:37:37,898 TRACE [cn.mldn.mldnshiro.ssm.dao.IMemberDAO.findById] - <==        Row: mldn, 普通人, java, 0
+2017-10-25 09:37:37,903 DEBUG [cn.mldn.mldnshiro.ssm.dao.IMemberDAO.findById] - <==      Total: 1
+2017-10-25 09:37:37,908 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@3c0f93f1: startup date [Wed Oct 25 09:37:36 CST 2017]; root of context hierarchy
+2017-10-25 09:37:37,911 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 09:37:44,531 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 09:37:44,539 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 09:37:44,546 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3532ec19, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68c4039c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ae45eb6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59f99ea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27efef64]
+2017-10-25 09:37:44,627 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-base.xml]
+2017-10-25 09:37:44,839 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 09:37:44,874 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 09:37:44,899 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [D:\eclipse-workspace\mldnshiro\mldnshiro-ssm-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 09:37:44,957 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@3c0f93f1: startup date [Wed Oct 25 09:37:44 CST 2017]; root of context hierarchy
+2017-10-25 09:37:45,879 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 09:37:46,466 DEBUG [cn.mldn.mldnshiro.ssm.dao.IRoleDAO.findAllByMember] - ==>  Preparing: SELECT rid FROM member_role WHERE mid=? 
+2017-10-25 09:37:46,494 DEBUG [cn.mldn.mldnshiro.ssm.dao.IRoleDAO.findAllByMember] - ==> Parameters: mldn(String)
+2017-10-25 09:37:46,510 TRACE [cn.mldn.mldnshiro.ssm.dao.IRoleDAO.findAllByMember] - <==    Columns: rid
+2017-10-25 09:37:46,510 TRACE [cn.mldn.mldnshiro.ssm.dao.IRoleDAO.findAllByMember] - <==        Row: news
+2017-10-25 09:37:46,516 DEBUG [cn.mldn.mldnshiro.ssm.dao.IRoleDAO.findAllByMember] - <==      Total: 1
+2017-10-25 09:37:46,518 DEBUG [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - ==>  Preparing: SELECT actid FROM action WHERE rid IN ( SELECT rid FROM member_role WHERE mid=?) 
+2017-10-25 09:37:46,518 DEBUG [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - ==> Parameters: mldn(String)
+2017-10-25 09:37:46,520 TRACE [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - <==    Columns: actid
+2017-10-25 09:37:46,520 TRACE [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - <==        Row: news:add
+2017-10-25 09:37:46,520 TRACE [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - <==        Row: news:audit
+2017-10-25 09:37:46,520 TRACE [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - <==        Row: news:edit
+2017-10-25 09:37:46,520 TRACE [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - <==        Row: news:list
+2017-10-25 09:37:46,520 DEBUG [cn.mldn.mldnshiro.ssm.dao.IActionDAO.findAllByMember] - <==      Total: 4
+2017-10-25 09:37:46,525 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@3c0f93f1: startup date [Wed Oct 25 09:37:44 CST 2017]; root of context hierarchy
+2017-10-25 09:37:46,528 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 18:24:23,797 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 18:24:23,813 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 18:24:23,959 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e5792a0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3532ec19, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68c4039c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ae45eb6]
+2017-10-25 18:24:24,485 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 18:24:26,010 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 18:24:26,204 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 18:24:26,270 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 18:24:26,564 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 18:24:26 CST 2017]; root of context hierarchy
+2017-10-25 18:24:31,483 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 18:24:31,887 WARN [org.springframework.context.support.GenericApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceFrontImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IActionDAO' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\cn\mldn\shrio\ssm\service\dao\IActionDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/mldn/*.xml]: class path resource [mapping/cn/mldn/] cannot be resolved to URL because it does not exist
+2017-10-25 18:24:31,911 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 18:24:31,921 ERROR [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222] to prepare test instance [org.shrio.ssm.api.AppTest@18ece7f4]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceFrontImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IActionDAO' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\cn\mldn\shrio\ssm\service\dao\IActionDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/mldn/*.xml]: class path resource [mapping/cn/mldn/] cannot be resolved to URL because it does not exist
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:246)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IActionDAO' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\cn\mldn\shrio\ssm\service\dao\IActionDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/mldn/*.xml]: class path resource [mapping/cn/mldn/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 41 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/mldn/*.xml]: class path resource [mapping/cn/mldn/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 59 more
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/mldn/*.xml]: class path resource [mapping/cn/mldn/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:595)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1656)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	... 65 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/mldn/*.xml]: class path resource [mapping/cn/mldn/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.support.ResourceArrayPropertyEditor.setAsText(ResourceArrayPropertyEditor.java:120)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:465)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:438)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:585)
+	... 71 more
+2017-10-25 18:27:01,412 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 18:27:01,428 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 18:27:01,463 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e5792a0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3532ec19, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68c4039c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ae45eb6]
+2017-10-25 18:27:01,682 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 18:27:02,352 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 18:27:02,489 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 18:27:02,557 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 18:27:02,821 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 18:27:02 CST 2017]; root of context hierarchy
+2017-10-25 18:27:05,047 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 18:27:05,323 WARN [org.springframework.context.support.GenericApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceFrontImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IActionDAO' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\cn\mldn\shrio\ssm\service\dao\IActionDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/lh/vo/*.xml]: class path resource [mapping/cn/lh/vo/] cannot be resolved to URL because it does not exist
+2017-10-25 18:27:05,329 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 18:27:05,335 ERROR [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222] to prepare test instance [org.shrio.ssm.api.AppTest@18ece7f4]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceFrontImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IActionDAO' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\cn\mldn\shrio\ssm\service\dao\IActionDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/lh/vo/*.xml]: class path resource [mapping/cn/lh/vo/] cannot be resolved to URL because it does not exist
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:246)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IActionDAO' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\cn\mldn\shrio\ssm\service\dao\IActionDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/lh/vo/*.xml]: class path resource [mapping/cn/lh/vo/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 41 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/lh/vo/*.xml]: class path resource [mapping/cn/lh/vo/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 59 more
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/lh/vo/*.xml]: class path resource [mapping/cn/lh/vo/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:595)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1656)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	... 65 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapping/cn/lh/vo/*.xml]: class path resource [mapping/cn/lh/vo/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.support.ResourceArrayPropertyEditor.setAsText(ResourceArrayPropertyEditor.java:120)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:465)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:438)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:585)
+	... 71 more
+2017-10-25 18:27:58,347 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 18:27:58,364 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 18:27:58,405 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e5792a0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3532ec19, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68c4039c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ae45eb6]
+2017-10-25 18:27:58,634 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 18:27:59,320 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 18:27:59,452 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 18:27:59,511 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 18:27:59,723 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 18:27:59 CST 2017]; root of context hierarchy
+2017-10-25 18:28:02,100 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 18:28:04,927 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==>  Preparing: select mid,name,password,locked from member where mid=? 
+2017-10-25 18:28:05,055 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==> Parameters: mldn(String)
+2017-10-25 18:28:05,180 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==    Columns: mid, name, password, locked
+2017-10-25 18:28:05,181 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==        Row: mldn, 普通人, java, 0
+2017-10-25 18:28:05,204 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==      Total: 1
+2017-10-25 18:28:05,257 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 18:27:59 CST 2017]; root of context hierarchy
+2017-10-25 18:28:05,376 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 18:29:15,851 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 18:29:15,864 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 18:29:15,891 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e5792a0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3532ec19, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68c4039c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ae45eb6]
+2017-10-25 18:29:16,088 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 18:29:16,626 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 18:29:16,759 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 18:29:16,817 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 18:29:17,002 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 18:29:16 CST 2017]; root of context hierarchy
+2017-10-25 18:29:18,900 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 18:29:20,036 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==>  Preparing: select mid,name,password,locked from member where mid=? 
+2017-10-25 18:29:20,119 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==> Parameters: mldn(String)
+2017-10-25 18:29:20,160 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==    Columns: mid, name, password, locked
+2017-10-25 18:29:20,161 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==        Row: mldn, 普通人, java, 0
+2017-10-25 18:29:20,168 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==      Total: 1
+2017-10-25 18:29:20,179 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 18:29:16 CST 2017]; root of context hierarchy
+2017-10-25 18:29:20,198 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 19:21:14,285 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 19:21:14,301 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 19:21:14,339 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27efef64, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6f7fd0e6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47c62251, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e6fa38a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@66a3ffec]
+2017-10-25 19:21:14,590 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 19:21:15,265 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 19:21:15,388 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 19:21:15,440 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 19:21:15,636 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@71318ec4: startup date [Wed Oct 25 19:21:15 CST 2017]; root of context hierarchy
+2017-10-25 19:21:17,916 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 19:21:19,138 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==>  Preparing: select rid from member_role where mid=? 
+2017-10-25 19:21:19,217 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==> Parameters: mldn(String)
+2017-10-25 19:21:19,347 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@71318ec4: startup date [Wed Oct 25 19:21:15 CST 2017]; root of context hierarchy
+2017-10-25 19:21:19,355 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 19:22:34,429 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 19:22:34,447 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 19:22:34,487 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27efef64, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6f7fd0e6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47c62251, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e6fa38a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@66a3ffec]
+2017-10-25 19:22:34,814 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 19:22:35,514 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 19:22:35,620 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 19:22:35,680 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 19:22:35,893 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@71318ec4: startup date [Wed Oct 25 19:22:35 CST 2017]; root of context hierarchy
+2017-10-25 19:22:37,977 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 19:22:39,104 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==>  Preparing: select rid from member_role where mid=? 
+2017-10-25 19:22:39,208 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==> Parameters: mldn(String)
+2017-10-25 19:22:39,239 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==    Columns: rid
+2017-10-25 19:22:39,240 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: news
+2017-10-25 19:22:39,246 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==      Total: 1
+2017-10-25 19:22:39,250 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - ==>  Preparing: select actid from action where rid in (select rid from member_role where mid=?) 
+2017-10-25 19:22:39,251 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - ==> Parameters: mldn(String)
+2017-10-25 19:22:39,300 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==    Columns: actid
+2017-10-25 19:22:39,300 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:add
+2017-10-25 19:22:39,301 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:audit
+2017-10-25 19:22:39,301 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:edit
+2017-10-25 19:22:39,301 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:list
+2017-10-25 19:22:39,302 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==      Total: 4
+2017-10-25 19:22:39,319 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@71318ec4: startup date [Wed Oct 25 19:22:35 CST 2017]; root of context hierarchy
+2017-10-25 19:22:39,378 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2017-10-25 19:22:54,697 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-10-25 19:22:54,720 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2017-10-25 19:22:54,759 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e5792a0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26653222, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3532ec19, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68c4039c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ae45eb6]
+2017-10-25 19:22:54,981 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-base.xml]
+2017-10-25 19:22:55,629 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-datasource.xml]
+2017-10-25 19:22:55,745 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-mybatis.xml]
+2017-10-25 19:22:55,803 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\Web\SpringShrioMyBatis\shrio-ssm-member-service\target\classes\spring\spring-transaction.xml]
+2017-10-25 19:22:55,996 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 19:22:55 CST 2017]; root of context hierarchy
+2017-10-25 19:22:58,191 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-10-25 19:22:59,430 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==>  Preparing: select mid,name,password,locked from member where mid=? 
+2017-10-25 19:22:59,533 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - ==> Parameters: mldn(String)
+2017-10-25 19:22:59,566 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==    Columns: mid, name, password, locked
+2017-10-25 19:22:59,567 TRACE [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==        Row: mldn, 普通人, java, 0
+2017-10-25 19:22:59,572 DEBUG [cn.mldn.shrio.ssm.service.dao.IMemberDAO.findById] - <==      Total: 1
+2017-10-25 19:22:59,584 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==>  Preparing: select rid from member_role where mid=? 
+2017-10-25 19:22:59,585 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - ==> Parameters: admin(String)
+2017-10-25 19:22:59,586 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==    Columns: rid
+2017-10-25 19:22:59,586 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: member
+2017-10-25 19:22:59,590 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: dept
+2017-10-25 19:22:59,591 TRACE [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==        Row: news
+2017-10-25 19:22:59,591 DEBUG [cn.mldn.shrio.ssm.service.dao.IRoleDAO.findAllByMember] - <==      Total: 3
+2017-10-25 19:22:59,593 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - ==>  Preparing: select actid from action where rid in (select rid from member_role where mid=?) 
+2017-10-25 19:22:59,594 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - ==> Parameters: admin(String)
+2017-10-25 19:22:59,600 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==    Columns: actid
+2017-10-25 19:22:59,600 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: dept:edit
+2017-10-25 19:22:59,600 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: dept:list
+2017-10-25 19:22:59,601 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:add
+2017-10-25 19:22:59,601 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:edit
+2017-10-25 19:22:59,601 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:list
+2017-10-25 19:22:59,601 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: member:remove
+2017-10-25 19:22:59,601 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:add
+2017-10-25 19:22:59,602 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:audit
+2017-10-25 19:22:59,602 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:edit
+2017-10-25 19:22:59,603 TRACE [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==        Row: news:list
+2017-10-25 19:22:59,604 DEBUG [cn.mldn.shrio.ssm.service.dao.IActionDAO.findAllByMember] - <==      Total: 10
+2017-10-25 19:22:59,622 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@60c6f5b: startup date [Wed Oct 25 19:22:55 CST 2017]; root of context hierarchy
+2017-10-25 19:22:59,640 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed

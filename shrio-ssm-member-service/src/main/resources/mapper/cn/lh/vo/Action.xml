@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="cn.mldn.shrio.ssm.service.dao.IActionDAO">
+	<select id="findAllByMember" resultType="String" parameterType="String">
+		select actid from action where rid in (select rid from member_role where
+		mid=#{mid})
+	</select>
+
+</mapper>
