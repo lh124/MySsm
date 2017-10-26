@@ -28,8 +28,8 @@ public class MemberServiceFrontImpl implements IMemberServiceFront {
 	@Override
 	public Map<String, Set<String>> list(String mid) {
 		Map<String, Set<String>>  map=new HashMap<>();
-		map.put("allrole", roledao.findAllByMember(mid));
-		map.put("allaction", actiondao.findAllByMember(mid));
+		map.put("allRoles", roledao.findAllByMember(mid));
+		map.put("allActions", actiondao.findAllByMember(mid));
 		return map;
 	}
 

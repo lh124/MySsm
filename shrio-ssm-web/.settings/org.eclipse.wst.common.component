@@ -4,10 +4,13 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <dependent-module archiveName="shrio-ssm-dept-service-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shrio-ssm-dept-service/shrio-ssm-dept-service">
+        <dependent-module archiveName="shrio-ssm-member-service-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shrio-ssm-member-service/shrio-ssm-member-service">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="shrio-ssm-api-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shrio-ssm-api/shrio-ssm-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="shrio-ssm-dept-service-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shrio-ssm-dept-service/shrio-ssm-dept-service">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="shrio-ssm-web"/>

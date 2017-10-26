@@ -13,10 +13,17 @@
 	<name>shrio-ssm-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-
+		<dependency>
+			<groupId>cn.mldn</groupId>
+			<artifactId>shrio-ssm-member-service</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>cn.mldn</groupId>
 			<artifactId>shrio-ssm-dept-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-ehcache</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
@@ -89,12 +96,6 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<build>
