@@ -14,7 +14,7 @@
 <body>
 	<h1>
 		<c:if
-			test="${error == org.apache.shiro.authc.UnknownAccountException }">
+			test="${error!=null&&error == org.apache.shiro.authc.UnknownAccountException }">
 		登录帐号错误！
 	</c:if>
 	</h1>

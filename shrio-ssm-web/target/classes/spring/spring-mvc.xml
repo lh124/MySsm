@@ -23,7 +23,7 @@
 
 	<mvc:annotation-driven />	<!-- 启用SpringMVC注解配置支持 -->
 	<mvc:default-servlet-handler />	<!-- 启动Servlet的配置处理 -->
-	
+	 
 	
 	<!-- 配置错误的映射处理，出现了指定的异常之后可以让其跳转到错误页（/WEB-INF/pages/errors.jsp） -->
 	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">

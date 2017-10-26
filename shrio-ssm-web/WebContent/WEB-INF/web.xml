@@ -12,6 +12,24 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errors.action</location>
+	</error-page>
+	<error-page>
+		<exception-type>
+			org.apache.shiro.authz.UnauthorizedException
+		</exception-type>
+		<location>/errors.action</location>
+	</error-page> 
+	<error-page>
+		<exception-type>
+			org.apache.shiro.authz.AuthorizationException
+		</exception-type>
+		<location>/errors.action</location>
+	</error-page> 
+	
 	<!-- 监听器 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
