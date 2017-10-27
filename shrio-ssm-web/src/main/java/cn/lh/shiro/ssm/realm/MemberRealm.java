@@ -17,14 +17,15 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
+import cn.lh.shiro.ssm.util.enctype.PasswordUtil;
 import cn.mldn.shrio.ssm.service.front.IMemberServiceFront;
 import cn.mldn.shrio.ssm.vo.Member;
 public class MemberRealm extends AuthorizingRealm {
 	@Resource
 	private IMemberServiceFront memberService ;
-	
-	
-	
+
+
+
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		// 此方法主要是实现用户的认证处理操作
@@ -34,14 +35,16 @@ public class MemberRealm extends AuthorizingRealm {
 		if (member == null) {	// 用户信息不存在，不存在的信息应该抛出未知的账户异常
 			throw new UnknownAccountException("账户“"+mid+"”不存在。") ;
 		}
-		String password = new String((char[]) token.getCredentials()) ;	// 获得密码
+		// 需要对密码进行加密处理，因为从数据库之中取出的密码是加密后的文字信息
+		String password = PasswordUtil.encoder(new String((char[]) token.getCredentials())) ;	// 获得密码
+		System.out.println("加密密码----》"+password);
 		if (!member.getPassword().equals(password)) { // 用户名或密码错误；
 			throw new IncorrectCredentialsException("错误的用户名或密码！") ;
 		}
 		if (member.getLocked().equals(1)) {	// 用户被锁定了
 			throw new LockedAccountException(mid + "账户信息已经被锁定，无法登录！") ;
 		}
-		return new SimpleAuthenticationInfo(token.getPrincipal(), token.getCredentials(), "memberRealm");
+		return new SimpleAuthenticationInfo(token.getPrincipal(), password.toCharArray(), "memberRealm");
 	}
 
 	@Override
@@ -52,12 +55,12 @@ public class MemberRealm extends AuthorizingRealm {
 		String mid = (String) principals.getPrimaryPrincipal() ;	// 获得用户名
 		System.out.println("-------->"+mid);
 		Map<String,Set<String>> map = this.memberService.list(mid) ;
-		
+
 		info.setRoles(map.get("allRoles")); // 将所有的角色信息保存在授权信息中
 		System.out.println(map.get("allRoles"));
 		info.setStringPermissions(map.get("allActions")); // 保存所有的权限
 		System.out.println(map.get("allActions"));
 		return info ; 
 	}
- 
+
 }

@@ -33,6 +33,4 @@ public class MemberServiceFrontImpl implements IMemberServiceFront {
 		return map;
 	}
 
-
-
 }

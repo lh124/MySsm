@@ -16,5 +16,6 @@
 <shiro:hasRole name="member">
 	拥有member角色。
 </shiro:hasRole>
+<h1>name=${name}</h1>
 </body>
 </html>

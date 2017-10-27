@@ -2,9 +2,11 @@ package cn.lh.shiro.ssm.back;
 
 import javax.annotation.Resource;
 
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
+import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -32,6 +34,9 @@ public class DeptActionBack {
 	@RequestMapping("dept_list")
 	@ResponseBody
 	public Object list() {
+//		System.out.println(SecurityUtils.getSubject().getPrincipal());
+		SecurityUtils.getSubject().getSession().setAttribute("name", "姓名");
+		System.out.println(SecurityUtils.getSubject().getSession().getAttribute("name"));
 		return this.deptService.list() ;
 	}
 	@RequiresRoles("dept")
@@ -41,5 +46,6 @@ public class DeptActionBack {
 	public Object remove(Long deptno) { 
 		return this.deptService.remove(deptno);
 	}
+	EnterpriseCacheSessionDAO d;
 }
 
